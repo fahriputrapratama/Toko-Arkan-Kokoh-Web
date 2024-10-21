@@ -3,37 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toko Arkan Kokoh</title>
+    <title>TB. Kokoh Perkasa</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Toko Arkan Kokoh</h1>
-    </div>
-    <div class="nav-menu">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </div>
-    <div class="content">
-        <img src="image/image.png" alt="logo arkan kokoh" width="300px" height="500px">
-        <p>ini sebuah usaha rintisan yang saya telah saya jalani kurang lebih 3 tahun. nama "Arkan" Berasal dari nama saya dan "Kokoh" kuat yang saya harapkan bangunannya kuat-kuat</p>
+    <header id="Home">
+        <h1>TB. Kokoh Perkasa</h1>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Layanan">Layanan</a></li>
+                    <li><a href="#Produk">Produk</a></li>
+                    <li><a href="#Kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <h1 id="About">About</h1>
+            <div class="content">
+                <div>
+                    <p>
+                        Toko Bangunan Kokoh Perkasa adalah solusi terpercaya bagi para profesional dan pemilik rumah yang membutuhkan bahan bangunan berkualitas tinggi. Berdiri dengan misi untuk menyediakan produk-produk bangunan terbaik, Kokoh Perkasa mengutamakan kekuatan, ketahanan, dan kualitas dalam setiap barang yang dijual.
+                    </p>
+                    <p>
+                        Kami menyediakan berbagai macam material bangunan, mulai dari semen, besi, baja, keramik, cat, hingga alat-alat pertukangan, dengan jaminan kualitas yang dapat diandalkan. Dengan pengalaman dan komitmen tinggi, Kokoh Perkasa selalu berusaha memberikan pelayanan ramah dan solusi terbaik bagi kebutuhan proyek Anda, baik kecil maupun besar.
+                    </p>
+                </div>
+                <img src="image/logoTB.png" alt="logo TB. Kokoh Perkasa" width="500" height="500">
+            </div>
+        </section>        
+        <section id="Layanan" class="container">
+            <h1>Layanan Kami</h1>
+            <table border="1" wid="500px" height="200px">
+                <thead>
+                    <tr>
+                        <td>Nama</td>
+                        <td>Deskripsi</td>
+                        <td>Range Harga</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cat interior</td>
+                        <td>Cat yang dirancang khusus untuk penggunaan di dalam ruangan.<br> Fungsinya untuk memberikan warna, perlindungan, dan estetika pada dinding interior.</td>
+                        <td>IDR 50,000 - 500,000/Liter</td>
+                    </tr>
+                    <tr>
+                        <td>Cat Eksterior</td>
+                        <td>Cat eksterior dirancang khusus untuk digunakan pada bagian luar bangunan,<br> sehingga lebih tahan terhadap cuaca ekstrem seperti hujan, panas matahari, dan kelembapan tinggi.</td>
+                        <td>IDR 100,000 - 600,000/Liter</td>
+                    </tr>
+                    <tr>
+                        <td>Semen</td>
+                        <td>Bahan perekat utama yang digunakan dalam konstruksi bangunan.</td>
+                        <td>IDR 50,000 - 150,000/Sak</td>
+                    </tr>
+                    <tr>
+                        <td>Batu Bata</td>
+                        <td>Bahan bangunan yang digunakan untuk membangun dinding, struktur, dan elemen lainnya dalam konstruksi.</td>
+                        <td>IDR 600 - 1,500/Buah</td>
+                    </tr>
+                    <tr>
+                        <td>Genteng</td>
+                        <td>Bahan atap yang digunakan untuk melindungi bangunan dari cuaca, seperti hujan, panas, dan angin.</td>
+                        <td>IDR 4,000 - 20,000/Buah</td>
+                    </tr>
+                    <tr>
+                        <td>Keramik</td>
+                        <td>Bahan bangunan yang digunakan untuk lantai, dinding, dan elemen dekoratif lainnya.</td>
+                        <td>IDR 7,000 - 150,000/Buah</td>
+                    </tr>
+                    <tr>
+                        <td>Paku</td>
+                        <td>Bahan pengikat yang sering digunakan dalam konstruksi dan kerajinan untuk menyatukan berbagai material, seperti kayu, logam, dan plastik.</td>
+                        <td>IDR 14,000 - 20,000/Kg</td>
+                    </tr>
+                </tbody>
+            </table>   
+        </section>
+        <section id="Produk" class="container">
+            <h1>Produk Kami</h1>
+            <div class="card-container">
+                <div class="card">
+                    <img src="image/Semen-3-Roda.jpg" alt="Keramik">
+                    <h2>Semen 3 Roda</h2>
+                    <p>Deskripsi Semen Tiga Roda 40kg <br>
+                        Harga per 1 sak</p>
+                    <p style="color: rgb(98, 0, 255);">Rp. 65.000</p>
+                    <button>Beli</button>
+                </div>
+                <div class="card">
+                    <img src="image/batu bata.jpg" alt="Keramik">
+                    <h2>Batu Bata</h2>
+                    <p>Batu Bata Merah <br>
+                        Ukuran : 19 cm x 9 cm x 5 cm <br>
+                        Harga per Buah</p>
+                    <p style="color: rgb(98, 0, 255);">Rp. 1.000</p>
+                    <button>Beli</button>
+                </div>
+                <div class="card">
+                    <img src="image/marmer putih.jpg" alt="Keramik">
+                    <h2>Marmer Putih</h2>
+                    <p>keramik ukuran 40x40 <br>
+                        warna abu dan cream <br>
+                        Harga per 6 Buah</p>
+                    <p style="color: rgb(98, 0, 255);">Rp. 45.000</p>
+                    <button>Beli</button>
+                </div>
+                <div class="card">
+                    <img src="image/cat nodrop.jpeg" alt="Keramik">
+                    <h2>Cat No Drop</h2>
+                    <p>Nodrop Cat pelapis kemasan 1kg<br>
+                        Barang 100% ORIGINAL Asli Pabrik 
+                        Harga per 6 Buah</p>
+                    <p style="color: rgb(98, 0, 255);">Rp. 58.000</p>
+                    <button>Beli</button>
+                </div>
+                <div class="card">
+                    <img src="image/cat_Avitex.webp" alt="Keramik">
+                    <h2>Cat Avitex</h2>
+                    <p>merk : avitex ( aviand brands) <br>
+                        kemasan : 5kg
+                        Harga per 5 Kg</p>
+                    <p style="color: rgb(98, 0, 255);">Rp. 150.000</p>
+                    <button>Beli</button>
+                </div>
+                <div class="card">
+                    <img src="image/paku.jpg" alt="Keramik">
+                    <h2>Paku Kayu</h2>
+                    <p>Paku Kayu 5cm <br>
+                        per 1 KG <br>
+                        Harga yang tertera harga per KG</p>
+                    <p style="color: rgb(98, 0, 255);">Rp. 17.000</p>
+                    <button>Beli</button>
+                </div>
+                <div class="card">
+                    <img src="image/pasir.jpg" alt="Keramik">
+                    <h2>Pasir Cirebon</h2>
+                    <p>Pasir Cirebon<br>
+                        per 1 KG 
+                        Harga yang tertera harga per KG</p>
+                    <p style="color: rgb(98, 0, 255);">Rp. 4.000</p>
+                    <button>Beli</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="Kontak" class="container">
+            <h1>KONTAK KAMI</h1>
+            <form action="/submit-form" method="post">
+                <label for="">Nama</label>
+                <input type="text" required>
+                <label for="">Email</label>
+                <input type="email" required>
+                <label for="">Pesan</label>
+                <textarea name="" id="" required>Masukkan Pesan</textarea>
+                <p>Untuk informasi lebih lanjut, silakan hubungi kami:</p>
+                <a href="https://wa.me/62895385226421"><i class="fa-brands fa-whatsapp"></i> 0895385226421</a>
+                <a href="https://www.instagram.com/aef.pratamaa/"><i class="fa-brands fa-instagram"></i> Instagram</a> |
+                <p>TB. Kokoh Perkasa</p>
+                <p>JL. Medan Merdeka</p>   
 
-        <h2>PRODUK KAMI</h2>
-        <ul>
-            <li>Semen</li>
-            <li>Pasir</li>
-            <li>Cat</li>
-            <li>Cungkir</li>
-            <li>Sarung Tangan</li>
-        </ul>
-    </div>
-
-    <div class="footer">
-        <p>untuk informasi lebih lanjut bisa Contact</p>
-        <a href="https://wa.me/6285786531239"><i class="fa-brands fa-whatsapp"></i>085786531239</a>
-    </div>
+            </form>
+        </section>
+    </footer>
 </body>
 </html>
