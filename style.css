@@ -46,26 +46,26 @@ p {
 }
 
 .container h1 {
-    text-align: left; /* Opsional: atur perataan teks untuk judul */
-    margin-bottom: 5px; /* Beri jarak antara judul dan konten */
+    text-align: left;
+    margin-bottom: 5px; 
 }
 
 .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px; /* Jarak antara teks dan gambar */
-    flex-direction: row; /* Membalikkan urutan, sehingga gambar di sebelah kanan */
+    gap: 20px;
+    flex-direction: row; 
 }
 
 .content img {
-    max-width: 50%; /* Atur lebar gambar agar tidak terlalu besar */
+    max-width: 50%; 
     height: auto;
-    border-radius: 10px; /* Opsional: tambahkan border-radius untuk sudut melengkung */
+    border-radius: 10px; 
 }
 
 .content div {
-    max-width: 50%; /* Atur lebar teks */
+    max-width: 50%; 
     text-align: justify;
 }
 
