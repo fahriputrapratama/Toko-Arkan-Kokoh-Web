@@ -75,7 +75,11 @@ p {
 /* Gaya khusus untuk judul dalam kontainer */
 .container h1 {
     text-align: left;
+<<<<<<< HEAD
     margin-bottom: 5px;
+=======
+    margin-bottom: 5px; 
+>>>>>>> 4abb7b5d74d8e1d94668d244ffdd146151a8161e
 }
 
 /* Gaya untuk konten utama yang terstruktur dalam baris */
@@ -84,19 +88,33 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+<<<<<<< HEAD
     flex-direction: row;
+=======
+    flex-direction: row; 
+>>>>>>> 4abb7b5d74d8e1d94668d244ffdd146151a8161e
 }
 
 /* Gaya untuk gambar di dalam .content */
 .content img {
+<<<<<<< HEAD
     max-width: 50%;
     height: auto;
     border-radius: 10px;
+=======
+    max-width: 50%; 
+    height: auto;
+    border-radius: 10px; 
+>>>>>>> 4abb7b5d74d8e1d94668d244ffdd146151a8161e
 }
 
 /* Gaya untuk div di dalam .content */
 .content div {
+<<<<<<< HEAD
     max-width: 50%;
+=======
+    max-width: 50%; 
+>>>>>>> 4abb7b5d74d8e1d94668d244ffdd146151a8161e
     text-align: justify;
 }
 
@@ -164,6 +182,7 @@ p {
 .card button:hover {
     background-color: #1e2341;
 }
+<<<<<<< HEAD
 
 /* Gaya untuk header halaman */
 header {
@@ -370,4 +389,8 @@ th, td {
 /* Gaya untuk header tabel */
 th {
     background-color: #f2f2f2;
+=======
+footer a{
+    color: black;
+>>>>>>> 4abb7b5d74d8e1d94668d244ffdd146151a8161e
 }
