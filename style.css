@@ -85,33 +85,26 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-<<<<<<< HEAD
     flex-direction: row;
-=======
     flex-direction: row; 
->>>>>>> 4abb7b5d74d8e1d94668d244ffdd146151a8161e
 }
 
 /* Gaya untuk gambar di dalam .content */
 .content img {
-<<<<<<< HEAD
     max-width: 50%;
     height: auto;
     border-radius: 10px;
-=======
+
     max-width: 50%; 
     height: auto;
     border-radius: 10px; 
->>>>>>> 4abb7b5d74d8e1d94668d244ffdd146151a8161e
+
 }
 
 /* Gaya untuk div di dalam .content */
 .content div {
-<<<<<<< HEAD
     max-width: 50%;
-=======
     max-width: 50%; 
->>>>>>> 4abb7b5d74d8e1d94668d244ffdd146151a8161e
     text-align: justify;
 }
 
@@ -179,7 +172,387 @@ p {
 .card button:hover {
     background-color: #1e2341;
 }
-<<<<<<< HEAD
+/* Gaya untuk header halaman */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #34495e;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Gaya untuk judul di dalam header */
+header h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+    margin-right: auto;
+}
+
+/* Gaya untuk navigasi di dalam header */
+nav {
+    flex: 1;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Gaya untuk daftar menu navigasi */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/* Gaya untuk item menu */
+li {
+    margin: 0 15px;
+}
+
+/* Gaya untuk link di dalam navigasi */
+a {
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Efek hover untuk link di dalam navigasi */
+a:hover {
+    background-color: #061f30;
+}
+
+/* Gaya untuk elemen utama */
+main {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya untuk bagian kontak */
+#Kontak {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Gaya judul di dalam bagian kontak */
+#Kontak h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+}
+
+/* Gaya untuk formulir dalam bagian kontak */
+#Kontak form {
+    width: 100%;
+    max-width: 500px;
+    margin-left: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+/* Gaya untuk label dalam formulir */
+#Kontak form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #555;
+    text-align: left;
+}
+
+/* Gaya untuk input dan textarea dalam formulir */
+#Kontak form input[type="text"],
+#Kontak form input[type="email"],
+#Kontak form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Gaya untuk textarea dalam formulir */
+#Kontak form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Gaya untuk tombol submit */
+#submit {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1.1em;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+/* Efek hover dan klik untuk tombol submit */
+#submit:hover {
+    background-color: #005bb5;
+}
+#submit:active {
+    background-color: #004a99;
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Gaya untuk kontainer footer */
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Gaya untuk konten footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Gaya untuk paragraf di dalam footer */
+footer p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+/* Gaya untuk informasi kontak dalam footer */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* Gaya untuk link kontak dalam footer */
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efek hover untuk link kontak dalam footer */
+.contact-info a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Gaya untuk detail footer */
+.footer-details {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Gaya untuk tabel */
+table {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+/* Gaya untuk cell tabel */
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Gaya untuk header tabel */
+th {
+    background-color: #f2f2f2;
+}
+footer a{
+    color: black;
+}
+/* Mengatur gaya dasar untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Gaya dasar untuk badan halaman */
+body {
+    font-family: "inter", Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Gaya untuk elemen link */
+a {
+    font-weight: 400;
+    color: #777;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efek hover untuk link */
+a:hover {
+    color: #007BFF;
+}
+
+/* Gaya dasar untuk gambar */
+img {
+    display: inline-block;
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Gaya untuk teks yang dipilih */
+::selection {
+    background: rgba(255, 162, 23, 0.8);
+    color: #fff;
+    text-shadow: none;
+}
+
+/* Gaya untuk judul halaman */
+h1, .h1, h2, .h2 {
+    line-height: 1.5;
+    color: #111;
+}
+
+/* Gaya khusus untuk h1 */
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0;
+    text-align: center;
+    color: #333;
+}
+
+/* Gaya untuk paragraf */
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: black;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Pengaturan margin kontainer */
+.container {
+    margin-top: 20px;
+}
+
+/* Gaya khusus untuk judul dalam kontainer */
+.container h1 {
+    text-align: left;
+    margin-bottom: 5px;
+    margin-bottom: 5px; 
+}
+
+/* Gaya untuk konten utama yang terstruktur dalam baris */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row;
+    flex-direction: row; 
+}
+
+/* Gaya untuk gambar di dalam .content */
+.content img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 50%; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+/* Gaya untuk div di dalam .content */
+.content div {
+    max-width: 50%;
+    max-width: 50%; 
+    text-align: justify;
+}
+
+/* Membuat scroll horizontal */
+.horizontal-scroll {
+    width: 100%;
+    scrollbar-color: transparent transparent;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+/* Gaya untuk kontainer kartu */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: max-content;
+}
+
+/* Gaya dasar untuk setiap kartu */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: max-content;
+    flex-shrink: 0;
+}
+
+/* Gaya untuk gambar di dalam kartu */
+.card img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Gaya untuk judul pada kartu */
+.card h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+/* Gaya untuk paragraf pada kartu */
+.card p {
+    padding: 0 15px;
+    color: #666;
+}
+
+/* Gaya untuk tombol di dalam kartu */
+.card button {
+    background-color: #0b23f5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek hover untuk tombol di dalam kartu */
+.card button:hover {
+    background-color: #1e2341;
+}
 
 /* Gaya untuk header halaman */
 header {
@@ -386,8 +759,7 @@ th, td {
 /* Gaya untuk header tabel */
 th {
     background-color: #f2f2f2;
-=======
+}
 footer a{
     color: black;
->>>>>>> 4abb7b5d74d8e1d94668d244ffdd146151a8161e
 }
