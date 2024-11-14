@@ -75,11 +75,8 @@ p {
 /* Gaya khusus untuk judul dalam kontainer */
 .container h1 {
     text-align: left;
-<<<<<<< HEAD
     margin-bottom: 5px;
-=======
     margin-bottom: 5px; 
->>>>>>> 4abb7b5d74d8e1d94668d244ffdd146151a8161e
 }
 
 /* Gaya untuk konten utama yang terstruktur dalam baris */
