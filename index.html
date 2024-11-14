@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TB. Kokoh Perkasa</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="image/logoTB.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -88,11 +89,12 @@
         </section>
         <section id="Produk" class="container">
             <h1>Produk Kami</h1>
-            <div class="card-container">
-                <div class="card">
-                    <img src="image/Semen-3-Roda.jpg" alt="Keramik">
-                    <h2>Semen 3 Roda</h2>
-                    <p>Deskripsi Semen Tiga Roda 40kg <br>
+            <div class="horizontal-scroll">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="image/Semen-3-Roda.jpg" alt="Keramik">
+                        <h2>Semen 3 Roda</h2>
+                        <p>Deskripsi Semen Tiga Roda 40kg <br>
                         Harga per 1 sak</p>
                     <p style="color: rgb(98, 0, 255);">Rp. 65.000</p>
                     <button>Beli</button>
@@ -153,8 +155,6 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
         <section id="Kontak" class="container">
             <h1>KONTAK KAMI</h1>
             <form action="/submit-form" method="post">
@@ -163,15 +163,62 @@
                 <label for="">Email</label>
                 <input type="email" required>
                 <label for="">Pesan</label>
-                <textarea name="" id="" required>Masukkan Pesan</textarea>
-                <p>Untuk informasi lebih lanjut, silakan hubungi kami:</p>
-                <a href="https://wa.me/62895385226421"><i class="fa-brands fa-whatsapp"></i> 0895385226421</a>
-                <a href="https://www.instagram.com/aef.pratamaa/"><i class="fa-brands fa-instagram"></i> Instagram</a> |
-                <p>TB. Kokoh Perkasa</p>
-                <p>JL. Medan Merdeka</p>   
-
+                <textarea id="pesan" required>Masukkan Pesan</textarea>
+                <label for="submit"></label>
+                <button type="submit" id="submit">Kirim Pesan</button>
             </form>
         </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>Untuk informasi lebih lanjut, silakan hubungi kami:</p>
+            <div class="contact-info">
+                <a href="https://wa.me/62895385226421"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                <a href="https://www.instagram.com/aef.pratamaa/"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href=""></a>
+            </div>
+            <p>TB. Kokoh Perkasa</p>
+            <p>JL. Medan Merdeka</p>
+        </div>
     </footer>
+    <script>
+        // memunculkan alert ketika menekan tombol beli
+        document.querySelectorAll('.card button').forEach(button => {
+        button.addEventListener('click', function() {
+            alert('Item berhasil ditambahkan ke keranjang!');
+        });
+        });
+
+        // validasi form sebelum di submit
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+        const nama = this.querySelector('input[type="text"]').value;
+        const email = this.querySelector('input[type="email"]').value;
+        const pesan = this.querySelector('textarea').value;
+
+        if (!nama || !email || !pesan) {
+            e.preventDefault();
+            alert('Semua kolom harus diisi!');
+        }else {
+            // Menampilkan alert setelah validasi berhasil dengan nama pengirim
+            alert(`Pesan Anda telah berhasil dikirim, ${nama}. Terima kasih!`);
+            this.reset();
+        }
+        });
+        // Menangani textarea untuk menghapus teks default
+        const textarea = document.getElementById('pesan');
+        const defaultMessage = 'Masukkan Pesan';
+
+        textarea.addEventListener('focus', function() {
+            if (this.value === defaultMessage) {
+                this.value = '';
+            }
+        });
+        textarea.addEventListener('blur', function() {
+            if (this.value === '') {
+                this.value = defaultMessage;
+            }
+        });
+    </script>
 </body>
 </html>
